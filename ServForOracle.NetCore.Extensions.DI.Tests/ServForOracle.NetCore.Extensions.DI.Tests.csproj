@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ServForOracle.NetCore.Extensions.DependencyInjection\ServForOracle.NetCore.Extensions.DependencyInjection.csproj" />
+    <ProjectReference Include="..\ServForOracle.NetCore.Extensions.DI\ServForOracle.NetCore.Extensions.DI.csproj" />
   </ItemGroup>
 
 </Project>

@@ -41,12 +41,15 @@ namespace Microsoft.Extensions.DependencyInjection
 
         public static IServiceCollection AddServForOracle<T>(this IServiceCollection services, Dictionary<T, string> connectionStringsKeyNamed)
         {
-
             if (services == null)
             {
                 throw new ArgumentNullException(nameof(services));
             }
-            if (connectionStringsKeyNamed is null || !connectionStringsKeyNamed.Any())
+            if (connectionStringsKeyNamed is null)
+            {
+                throw new ArgumentNullException(nameof(connectionStringsKeyNamed));
+            }
+            if(!connectionStringsKeyNamed.Any())
             {
                 throw new ArgumentOutOfRangeException(nameof(connectionStringsKeyNamed));
             }
