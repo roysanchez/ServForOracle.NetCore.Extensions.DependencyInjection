@@ -25,7 +25,7 @@ namespace ServForOracle.NetCore.Extensions.DI.Tests
         }
 
         [Theory, AutoData]
-        public void Dictionary_Throws_ArgumentNull(Dictionary<string,string> connectionStrings, string otherKey)
+        public void Dictionary_Throws_ArgumentNull(Dictionary<string, string> connectionStrings, string otherKey)
         {
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddServForOracle(connectionStrings);
@@ -100,10 +100,10 @@ namespace ServForOracle.NetCore.Extensions.DI.Tests
             var serviceCollection = new ServiceCollection();
 
             serviceCollection.AddServForOracle<TestEnum>(new Dictionary<TestEnum, string>
-            {
-                { TestEnum.A, conStringA },
-                { TestEnum.B, conStringB }
-            });
+                {
+                    { TestEnum.A, conStringA },
+                    { TestEnum.B, conStringB }
+                });
 
             var provider = serviceCollection.BuildServiceProvider();
 

@@ -76,7 +76,6 @@ namespace Microsoft.Extensions.DependencyInjection
             return services;
         }
 
-
         public static IServiceCollection AddServForOracle<T>(this IServiceCollection services, IEnumerable<string> connectionStrings)
             where T : Enum
         {

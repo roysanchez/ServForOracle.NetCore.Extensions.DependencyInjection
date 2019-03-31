@@ -1,8 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>7.3</LangVersion>
+    <Version>1.0.0-beta01</Version>
+    <PackageId>ServForOracle.NetCore.Extensions.DependencyInjection</PackageId>
+    <Title>ServForOracle.NetCore DI Integration</Title>
+    <Authors>Roy Sánchez</Authors>
+    <Description>An extension that integrations ServForOracle.NetCore with the ASP.NET Dependency Injection</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright 2019 (c) Roy Sanchez. All rights reserved.</Copyright>
+    <PackageReleaseNotes>
+      First release
+    </PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/roysanchez/ServForOracle.NetCore.Extensions.DependencyInjection/</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/roysanchez/ServForOracle.NetCore.Extensions.DependencyInjection/</PackageProjectUrl>
+    <PackageTags>Oracle; ODP.NET Managed; Oracle UDT; Oracle User Defined Types;NetCore;Dependency Injection</PackageTags>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
 
   <ItemGroup>
